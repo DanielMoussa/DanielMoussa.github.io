@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/contact.css">
+    <script src="javascript/contact.js"></script>
+    <title>Contact-Us</title>
+</head>
+<body>
+    <section class="contact">
+        <div class="content">
+            <h2>Contact-Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Pariatur ex molestiae sed corrupti ducimus corporis ipsum assumend
+            </p> 
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon" id="address"><i class="ri-map-pin-fill" onclick="goToMaps()" onmouseenter="performanceIn()" onmouseout="performanceOut()"></i></i></div>
+                    <div class="text">
+                        <h2>Address</h2>
+                        <p >2651 Ashrafieh, <br>Ashrafieh,beirut, <br>55067</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon" id="phone"><i class="ri-phone-fill" onmouseenter="phoneIn()" onmouseout="phoneOut()"></i></div>
+                    <div class="text">
+                        <h2>Phone</h2>
+                        <p>76-118934  /  76-314387</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon" id="email"><i class="ri-mail-fill" onmouseenter="emailIn()" onmouseout="emailOut()"></i></div>
+                    <div class="text">
+                        <h2>Email</h2>
+                        <p>pcPartwebname@gmail.com</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="contactForm">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" required>
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" required id="validate">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required></textarea>
+                        <span>Write Your Message</span>
+                    </div>
+                    <div class="inputBox" id="button">
+                        <input type="submit" value="Send" required onclick="validateEmail()">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
